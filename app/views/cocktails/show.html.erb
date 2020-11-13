@@ -1,1 +1,13 @@
-<h1> this will show </h1>
+<h1><%= @cocktail.name %> </h1>
+
+
+      <div class="card-cocktail">
+          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tc-tequila-cocktails-12419-1575567419.jpg?crop=0.502xw:1.00xh;0,0&resize=640:*">
+          <div class="card-cocktail-infos">
+            <p> my god </p>
+          </div>
+        </div>
+
+
+<%= link_to 'Back', cocktails_path %>
+<%= link_to 'New', new_cocktail_path(@cocktail) %>

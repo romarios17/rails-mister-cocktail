@@ -1,1 +1,16 @@
-<h1> testing testing 123 </h1>
+<h1> ALL THE COCKTAILS !!! </h1>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-sm-4">
+        <div class="card-cocktail">
+          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tc-tequila-cocktails-12419-1575567419.jpg?crop=0.502xw:1.00xh;0,0&resize=640:*">
+          <div class="card-cocktail-infos">
+            <p>   <%= cocktail.name  %> </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
