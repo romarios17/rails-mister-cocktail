@@ -1,4 +1,14 @@
-<h1> ALL THE COCKTAILS !!! </h1>
+<title> ALL THE DREENKS!!!! </title>
+
+  <nav>
+    <div class="logo">
+      <h2><b> Let's get RAILed!! </b></h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/cocktails">Home</a></li>
+      <li><a href="/cocktails/new">Nouveau Cocktail</a></li>
+    </ul>
+  </nav>
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
@@ -6,7 +16,10 @@
         <div class="card-cocktail">
           <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tc-tequila-cocktails-12419-1575567419.jpg?crop=0.502xw:1.00xh;0,0&resize=640:*">
           <div class="card-cocktail-infos">
-            <p>   <%= cocktail.name  %> </p>
+            <p><b>   <%= cocktail.name  %></b></p>
+            <ul class="nav-links">
+            <li><a href="/cocktails/`${cocktail_id}`">Edit</a></li>
+            </ul>
           </div>
         </div>
       </div>

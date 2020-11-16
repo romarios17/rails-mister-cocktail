@@ -1,12 +1,31 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+
+nav {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ min-height: 8vh;
+ background-color: #DDA0DD;
+ font-family: 'Poppins', sans-serif;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.logo {
+  color: #F5FFFA;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: px;
+  list-style: none;
+  color: #FFFFD8
 }
